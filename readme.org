@@ -1,0 +1,4 @@
+#+TITLE: Polymaths
+
+My attempt at single variable polynomial expression
+manipulation. Mostly just hacking around to explore the field.
