@@ -121,7 +121,7 @@ class Polynomial():
                     term_results.append(terms[0])
                 else:
                     term_results.append(terms[0].add(terms[1:]))
-                    term_results.sort(key=lambda term: term.order, reverse=True)
+            term_results.sort(key=lambda term: term.order, reverse=True)
             return Polynomial(term_results)
 
     def multiply(self, other):
