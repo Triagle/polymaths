@@ -114,7 +114,7 @@ class Polynomial():
         if len(self.terms) <= 1:
             return self
         else:
-            term_map = self.bucket_terms()
+            term_map = self._bucket_terms()
             term_results = []
             for terms in term_map.values():
                 if len(terms) == 1:
