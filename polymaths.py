@@ -22,7 +22,7 @@ class Term():
         """ Add two (or more) terms together. """
         # Guard against unequal orders
         well_ordered = any(self.order != other.order for other in more)
-        if self.order != other.order and well_ordered:
+        if self.order != other.order or not well_ordered:
             raise OrderError(self.order, other.order)
         rhs = sum(term.coefficient for term in more + [other])
         coefficient = self.coefficient + rhs
